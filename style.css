@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 html {
@@ -15,68 +15,77 @@ body {
 
 /* NAVIGATION MENU STYLES */
 
-li, a, button {
+li,
+a,
+button {
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
 }
+
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 30px 10%; /*top/bottom and sides*/
-  background: #fafafa;
-  color:#00204a;
+  padding: 30px 10%;
+  /*top/bottom and sides*/
+  background-color: #fafafa;
+  color: #00204a;
   margin-bottom: 30px;
 }
 
 .logo {
-  width:20%;
+  width: 20%;
   cursor: pointer;
-  margin-right:auto;
-} 
+  margin-right: auto;
+}
+
 .nav-links {
   list-style: none;
 }
+
 .nav-links li {
-  display: inline-block; /*makes the list display side by side*/
+  display: inline-block;
+  /*makes the list display side by side*/
   padding: 0px 20px;
 }
+
 .nav-links li a {
   transition: all 0.3s ease 0s;
 }
 
 .nav-links li a:hover {
-  color:dimgrey;
+  color: dimgrey;
 }
 
 .hamburger {
-display: none;
+  display: none;
 }
 
 .bar {
-display: block;
-width: 25px;
-height: 3px;
-margin: 5px auto;
--webkit-transition: all 0.3s ease-in-out;
-transition: all 0.3s ease-in-out;
-background-color: #551A85;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #551A85;
 }
+
 /*BUTTON IS REMOVED*/
 
 /* button {
-  margin-left: 20px;
-  padding: 9px 25px;
-  background-color:#e4f1fe;
-  border:none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
+margin-left: 20px;
+padding: 9px 25px;
+background-color:#e4f1fe;
+border:none;
+border-radius: 50px;
+cursor: pointer;
+transition: all 0.3s ease 0s;
 }
 
 button:hover {
-  background-color: rgba(92, 105, 108,0.8);
+background-color: rgba(92, 105, 108,0.8);
 } */
 
 
@@ -89,6 +98,7 @@ h1 {
   font-size: 50px;
   /* font-weight: 800px; */
 }
+
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.tastingtable.com/img/gallery/canned-fish-brands-ranked-worst-to-best/l-intro-1642521020.jpg");
   height: 400px;
@@ -106,6 +116,7 @@ h1 {
   transform: translate(-50%, -50%);
   color: white;
 }
+
 /*END STYLING HERO BANNER*/
 
 /* STYLING GRID-CONTAINER */
@@ -113,21 +124,25 @@ h1 {
   padding: 2rem;
 }
 
-.grid-container > ul {
-  display: grid; /*everything inside the grid container is grid items*/
-  align-items: center;/*vertically center the columns inside the grid container */
-  grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); /**/
+.grid-container>ul {
+  display: grid;
+  /*everything inside the grid container is grid items*/
+  align-items: center;
+  /*vertically center the columns inside the grid container */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  /**/
 }
 
-.grid-items > ul {
+.grid-items>ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 2rem;
 }
 
 .card-image {
-  height:300px;
+  height: 300px;
   width: 100%;
+  border-radius: 8px;
 }
 
 .grid-container ul li {
@@ -135,47 +150,54 @@ h1 {
 }
 
 figcaption {
-  padding: 20px 0px; 
+  padding: 20px 0px;
 }
 
 .grid-container ul li a {
   display: block;
-  padding: 20px 0; 
+  padding: 20px 0;
 }
 
-/* END STYLING GRID-CONTAINER */ 
+/* END STYLING GRID-CONTAINER */
 
 /* COPY-TEXT */
 .copy-text {
-padding:50px 0;
-}    
+  padding: 50px 0;
+}
+
 /* END COPY-TEXT*/
 
 /* PARALLAX FROM W3 SCHOOLS*/
 .parallax-image {
-/* The image used */
-background-image: url("https://www.bhg.com/thmb/fZ9tNG_e1xLZYS8KcTLPsd8BsqA=/2122x0/filters:no_upscale():strip_icc()/seacuterie-board-7110755-92b7fe8bcdc048c29e3852628e00b540.jpg");
+  /* The image used */
+  background-image: url("https://www.bhg.com/thmb/fZ9tNG_e1xLZYS8KcTLPsd8BsqA=/2122x0/filters:no_upscale():strip_icc()/seacuterie-board-7110755-92b7fe8bcdc048c29e3852628e00b540.jpg");
 
-/* Set a specific height */
-min-height: 250px; 
+  /* Set a specific height */
+  min-height: 250px;
 
-/* Create the parallax scrolling effect */
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 8px;
 }
 
 /* FOOTER CREATED WITH THIS TUTORIAL*/
 /* https://css-tricks.com/couple-takes-sticky-footer/#aa-there-is-grid */
 .footer {
-display: grid;
-grid-row-start: 2;
-grid-row-end: 3;
-background: #dee9f3;
-color:#00204a;
-padding: 20px;
-text-align: center;
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: #dee9f3;
+  color: #00204a;
+  padding: 20px;
+  text-align: center;
+}
+
+.x-small {
+  font-size: .9em;
 }
 
 /*HAMBURGER MENU FROM THIS TUTORIAL WITH SOME MODIFICATIONS*/
@@ -183,58 +205,69 @@ text-align: center;
 
 @media only screen and (max-width: 500px) {
 
-.logo {
-  width:50%;
-  cursor: pointer;
-  margin-right:auto;
-} 
+  .logo {
+      width: 50%;
+      cursor: pointer;
+      margin-right: auto;
+  }
 
-.parrallax-image {
-  background-attachment: inherit;
-}
+  /* CHANGE PICTURE IN PARALLAX FOR MOBILE aka DISABLE */
+  .parallax-image {
+      background-image: url("https://www.muscleandfitness.com/wp-content/uploads/2017/06/A-Variety-Of-Canned-Fish-Displayed-On-A-Cutting-Board.jpg?quality=86&strip=all");
+      min-height: 300px;
+      width: 100%;
+      border-radius: 8px;
+      background-attachment: local;
+      /*CROPPING IMAGE TO REMOVE LETTERING ON THE BOTTOM*/
+      /* margin: 0px 0px -150px 0px; */
 
-.hero-image.active {
-  margin-top: 85px;
-}
+  }
 
-.nav-menu {
-    display: flex;
-    position: absolute;
-    left: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color:#fafafa;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow:
-        0 10px 27px rgba(0, 0, 0, 0.05);
-}
+  .hero-image.active {
+      margin-top: 85px;
+  }
 
-.nav-menu.active {
-    left: 0;
-}
+  .nav-menu {
+      display: flex;
+      position: absolute;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fafafa;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      /* box-shadow:
+      0 10px 27px rgba(0, 0, 0, 0.05); */
+  }
 
-ul li {
-    margin: 5px 0;
-}
+  .nav-menu.active {
+      margin-top: 20px;
+      left: 0;
+  }
 
-.hamburger {
-    display: block;
-    cursor: pointer;
-}
+  ul li {
+      margin: 5px 0;
 
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
+  }
 
-.hamburger.active .bar:nth-child(1) {
- transform: translateY(8px) rotate(45deg);
-}
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
 
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+
 
 }
