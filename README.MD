@@ -1,1 +1,1 @@
-## Your source for gourmet, artisan, irresistible Tinned Fish.
+## Your source for gourmet, artisan, irresistible tinned fish.
