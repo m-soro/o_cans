@@ -181,14 +181,16 @@ text-align: center;
 /*HAMBURGER MENU FROM THIS TUTORIAL WITH SOME MODIFICATIONS*/
 /*https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci*/
 
-.parallax-alternate {
-display: none;
-}
-
 @media only screen and (max-width: 500px) {
 
+.logo {
+  width:50%;
+  cursor: pointer;
+  margin-right:auto;
+} 
+
 .parrallax-image {
-  background-attachment: scroll;
+  background-attachment: inherit;
 }
 
 .hero-image.active {
@@ -214,8 +216,8 @@ display: none;
     left: 0;
 }
 
-ul li a {
-    margin: 2.5rem 0;
+ul li {
+    margin: 5px 0;
 }
 
 .hamburger {
