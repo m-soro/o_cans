@@ -1,1 +1,1 @@
-## Your source for gourmet, artisan, irresistible Tinned Fish. You craving? 🤤😋🔥
+## Your source for gourmet, artisan, irresistible Tinned Fish.
